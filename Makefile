@@ -18,7 +18,7 @@ DEBIAN_ORIG_GZ := ../ruffle_$(VERSION).orig.tar.gz
 DEBIAN_ORIG_XZ := ../ruffle_$(VERSION).orig.tar.xz
 REVISION := $(shell echo $(notdir $(CURDIR)) | sed 's/$(VERSION)//' | tr -cd '0-9')
 ifeq ($(REVISION),)
-	REVISION := $(shell date +%Y%m%d)
+	REVISION := $(shell date +%y%j)
 endif
 
 all: ruffle_desktop
@@ -63,7 +63,7 @@ version:
 	  fi; \
 	  sed $(SI) '1i\ -- $(DEBFULLNAME) <$(DEBEMAIL)>  $(DEBDATE)' $(DEBIAN_DIR)/changelog; \
 	  sed $(SI) '1i\\' $(DEBIAN_DIR)/changelog; \
-	  touch -a .github/changelog.entries \
+	  touch -a .github/changelog.entries; \
 	  tac .github/changelog.entries | while read line; do \
 	    sed $(SI) "1i$$line" $(DEBIAN_DIR)/changelog; \
 	  done; \
