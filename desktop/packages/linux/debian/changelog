@@ -1,3 +1,11 @@
+ruffle (0.2.0-25337) unstable; urgency=medium
+
+  * tests: Validate known-failure tests against current Ruffle output by @moulins in #22380
+  * build(deps): bump rfd from 0.15.4 to 0.16.0 by @dependabot[bot] in #22387
+
+
+ -- ruffle <ruffle@ruffle.rs>  Wed, 03 Dec 2025 11:11:31 -0000
+
 
 
 
