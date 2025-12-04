@@ -1,0 +1,9 @@
+ruffle (0.2.0-nightly.2025.12.4-25338) unstable; urgency=medium
+
+  * tests: Validate known-failure tests against current Ruffle output by @moulins in #22380
+  * build(deps): bump rfd from 0.15.4 to 0.16.0 by @dependabot[bot] in #22387
+  * avm1: Allow non-object prototypes in `Object::new` by @moulins in #22397
+
+
+ -- ruffle <ruffle@ruffle.rs>  Thu, 04 Dec 2025 03:40:22 -0000
+
