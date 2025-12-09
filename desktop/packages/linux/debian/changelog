@@ -1,0 +1,20 @@
+ruffle (0.2.0-nightly.2025.12.9-25343) unstable; urgency=medium
+
+  * core/avm2: Minor fix to construction of children that were placed on the first frame by @Lord-McSweeney in #22239
+  * chore: Update translations from Crowdin by @kjarosh in #22411
+  * avm1: Don't fall back to `__resolve` in 'special' method calls by @moulins in #22410
+  * avm2: Fix behavior for goto queued after framescript in SWFv9 by @Lord-McSweeney in #22408
+  * chore: Run "npm audit fix" in web/ to fix a jws vulnerability by @torokati44 in #22412
+  * avm1: Lookup classes in global scope in primitive-to-object coercions by @moulins in #22406
+  * avm1: Reorder globals to match Flash by @kjarosh in #22429
+  * avm2: Misc fixes to make some avmplus JSON tests pass by @Lord-McSweeney in #22419
+  * avm2: Construct all errors in `error.rs` by @Lord-McSweeney in #22403
+  * text: Fix default align calculation for HTML fields by @kjarosh in #22428
+  * avm2: Fix passing primitive values to `isPrototypeOf` by @Lord-McSweeney in #22441
+  * avm1: Reorder properties of various objects to match Flash by @kjarosh in #22439
+  *  avm2: Store call stack for all errors and print it for primitive errors too by @Lord-McSweeney in #22440
+  * avm1: More accurate semantics for `instanceof` and `CastOp` by @moulins in #22433
+
+
+ -- ruffle <ruffle@ruffle.rs>  Tue, 09 Dec 2025 01:25:39 -0000
+
